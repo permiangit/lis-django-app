@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Confirmation</h1>
+    <p>Thank you for submitting your information!</p>
+    <h2>Your Entry:</h2>
+    <p><strong>Name:</strong> {{ entries.0.name }}</p>
+    <p><strong>Age:</strong> {{ entries.0.age }}</p>
+    <p><strong>Title:</strong> {{ entries.0.title }}</p>
+    <p><strong>Hometown:</strong> {{ entries.0.hometown }}</p>
+
+    <h2>Previous Entries:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Title</th>
+                <th>Hometown</th>
+                <th>Date Submitted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in entries %}
+            <tr>
+                <td>{{ entry.name }}</td>
+                <td>{{ entry.age }}</td>
+                <td>{{ entry.title }}</td>
+                <td>{{ entry.hometown }}</td>
+                <td>{{ entry.created_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
