@@ -13,6 +13,9 @@ This is a simple Django web application with a form for collecting user informat
 
 ### Installation
 1. Clone the repository:
-   ```bash
    git clone https://github.com/your-username/my-django-app.git
-   cd my-django-app
+
+2. Start the app server on your local machine:
+   cd mypoject
+   python manage.py runserver
+3. go to https://127.0.0.1:8000, you should see the form where you can enter data
