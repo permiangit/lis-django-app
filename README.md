@@ -9,9 +9,7 @@ This is a simple Django web application with a form for collecting user informat
 
 ## Setup Instructions
 
-### Prerequisites
-- Python 3.x
-- pip (Python package manager)
+## Need to install Django and Python if you don't have them on your machine
 
 ### Installation
 1. Clone the repository:
