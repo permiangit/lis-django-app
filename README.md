@@ -15,7 +15,12 @@ This is a simple Django web application with a form for collecting user informat
 1. Clone the repository:
    git clone https://github.com/your-username/my-django-app.git
 
-2. Start the app server on your local machine:
+2. On your local machine, creating the database(Django default SQLite) by running migration:
    cd mypoject
+   python manage.py makemigrations
+   python manage.py migrate
+
+3. On your local machine, start the app/web server
    python manage.py runserver
-3. go to https://127.0.0.1:8000, you should see the form where you can enter data
+   
+4. go to https://127.0.0.1:8000, you should see the form where you can enter data
