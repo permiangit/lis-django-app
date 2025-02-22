@@ -12,10 +12,10 @@ This is a simple Django web application with a form for collecting user informat
 ## Need to install Django and Python if you don't have them on your machine
 
 ### Installation
-1. Clone the repository:
+1. Clone the repository on to your local machine:
    git clone https://github.com/your-username/lis-django-app.git
 
-2. On your local machine, change into the repo folder after you cloded the github code files:
+2. On your local machine, move into the repo folder after you cloneed the github code files:
    cd lis-django-app
 
 3. On your local machine, start the app/web server
